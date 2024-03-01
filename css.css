@@ -1,0 +1,152 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 350px;
+    background-color: #312f2f;
+    padding: 30px;
+    border-radius: 30px;
+    position:static;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: rgb(226, 84, 84);
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: static;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+  }
+  
+  .title::before,.title::after {
+    position: static;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 60%;
+    left: 0px;
+    background-color: rgb(238, 74, 82);
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 21px;
+    background-color: rgb(225, 65, 65);
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(255, 255, 255, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: left;
+  }
+  
+  .signin a {
+    color: rgb(225, 65, 65);
+  }
+  
+  .signin a:hover {
+    text-decoration: underline rgb(225, 65, 65);
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: rgb(225, 65, 65);
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: rgb(194, 56, 56);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  
+  .login{
+    background-image: url(/img.img/1000_F_215123311_kYcKJcgTfm4UrsdiCoiePBTqtyuMQSf1.jpg);
+    background-size: cover;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
+  
+  
+  /*  PRODUCTOS  */
+  
+  .body-productos{
+    background-color: #686565;
+  }
+  
+  .d-grid {
+    margin: 15px;
+  }
